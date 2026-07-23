@@ -1,36 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funiro</title>
+
     <style>
-        .con1{background-color: aliceblue;display: flex;color:black;}
+        .con1 {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .con1-1 {
+            flex: 1;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .con1-2 {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .con1-3 {
+            flex: 2;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+        }
+
+        .con2 {
+            background-color: #f6e9df;
+            height: 600px;
+            position: relative;
+            width: 100%;
+        }
+
+        .con2-1 {
+            position: absolute;
+            margin-left: 150px;
+            margin-top: 70px;
+        }
+
+        .con2-2 {
+            width: 700px;
+            height: 400px;
+        }
+
+        .con2-3 {
+            position: absolute;
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            left: 120px;
+            top: 90px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #f19a63;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .con3 {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 40px;
+        }
+
+        .item {
+            display: flex;
+            gap: 10px;
+        }
+
+        .con4{
+    background-color:#f8efe7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:80px;
+}
+
+.con4-1{
+    flex:1;
+    margin-left:150px;
+}
+
+.con4-2{
+    flex:1;
+    position:relative;
+}
+
+.con4-3{
+    flex:1;
+}
+
+.btn1{
+    background-color:#e89b61;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-weight:bold;
+}
+
+.img1{
+    width:450px;
+    height:550px;
+}
+
+.img2{
+    width:300px;
+    height:400px;
+}
+
+.card1{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background-color:white;
+    padding:15px;
+}
+.con5{
+    background-color:#f4f4f4;
+    padding:70px;
+}
+
+.con5-1{
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.con5-2{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:50px;
+}
+
+.card{
+    width:330px;
+}
+
+.img3{
+    width:330px;
+    height:240px;
+    border-radius:5px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.date{
+    font-size:12px;
+    color:gray;
+    margin-top:10px;
+}
     </style>
 </head>
 
 <body>
-    <div>
-        <div>Funiro</div>
-        <div>Home</div>
-        <div>Product</div>
-        <div>Inspiration</div>
-        <div>
+
+    <div class="con1">
+
+        <div class="con1-1">
+            Funiro.
+        </div>
+
+        <div class="con1-2">
+            <div>Home</div>
+            <div>Products</div>
+            <div>Inspirations</div>
+        </div>
+
+        <div class="con1-3">
+            <input type="text" placeholder="Search for minimalist chair">
+            <div>❤</div>
+            <div>🛒</div>
+            <div>👤</div>
+        </div>
+
+    </div>
+
+    <div class="con2">
+
+        <div class="con2-1">
+            <img src="Module_02Assignment/assets/img1.jpeg" class="con2-2">
+        </div>
+
+        <div class="con2-3">
+
+            <h1>
+                High-Quality Furniture<br>
+                Just For You
+            </h1>
+
+            <p>
+                Our furniture is made from selected and best quality materials
+                that are suitable for your dream home.
+            </p>
+
+            <input type="button" value="Shop Now" class="btn">
+
+        </div>
+
+    </div>
+
+    <div class="con3">
+
+        <div class="item">
+            <div>🏆</div>
             <div>
-              Search for minimelist char
+                <b>High Quality</b><br>
+                crafted from top materials
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+        <div class="item">
+            <div>✅</div>
+            <div>
+                <b>Warranty Protection</b><br>
+                Over 2 years
+            </div>
+        </div>
+
+        <div class="item">
+            <div>🚚</div>
+            <div>
+                <b>Free Shipping</b><br>
+                Order over Rs.150
+            </div>
+        </div>
+
+        <div class="item">
+            <div>🎧</div>
+            <div>
+                <b>24/7 Support</b><br>
+                Dedicated support
+            </div>
+        </div>
+
     </div>
-    <div>
-        <!-- images -->
+<div class="con4">
+
+    <div class="con4-1">
+
+        <h1>
+            50+ Beautiful rooms<br>
+            inspiration
+        </h1>
+
+        <p>
+            Our designer already made a lot of beautiful
+            prototype of rooms that inspire you.
+        </p>
+
+        <input type="button" value="Explore More" class="btn1">
+
     </div>
-    <div>
-    
+
+    <div class="con4-2">
+
+        <img src="Module_02Assignment/assets/img10.jpeg" class="img1">
+
+        <div class="card1">
+            01 — Bed Room<br>
+            <b>Inner Peace</b>
+        </div>
+
     </div>
+
+    <div class="con4-3">
+
+        <img src="Module_02Assignment/assets/img11.jpeg" class="img2">
+
+    </div>
+
+</div>
+<div class="con5">
+
+    <div class="con5-1">
+        Tips & Tricks
+    </div>
+
+    <div class="con5-2">
+
+        <div class="card">
+
+            <img src="Module_02Assignment/assets/img12.jpeg" class="img3">
+
+            <div class="title">
+                How to create a living room to love
+            </div>
+
+            <div class="date">
+                20 Jan 2020
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="Module_02Assignment/assets/img23.avif" class="img3">
+
+            <div class="title">
+                Solution for clean look working space
+            </div>
+
+            <div class="date">
+                10 Jan 2020
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="Module_02Assignment/assets/img13.jpeg" class="img3">
+
+            <div class="title">
+                Make your cooking activity more fun with good setup
+            </div>
+
+            <div class="date">
+                20 Jan 2020
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 
 </html>
